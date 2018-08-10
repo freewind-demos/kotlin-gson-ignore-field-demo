@@ -1,9 +1,7 @@
 package example
 
-import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import com.google.gson.annotations.SerializedName
-
 
 private val site = Site("demo", listOf(
         Category("java-demos", listOf(
@@ -32,4 +30,4 @@ enum class State(val value: String) {
 
 data class Article(val title: String, val content: String?, val timestamp: Long, val state: State)
 data class Category(val title: String, val articles: List<Article>)
-data class Site(val name: String, val categories: List<Category>)
+data class Site(@SerializedName("site_name") val name: String, val categories: List<Category>)
