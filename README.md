@@ -1,6 +1,6 @@
-Kotlin Gson Demo
-================
+Kotlin Gson Ignore Field Demo
+=============================
 
-Kotlin data classes <-----(gson)----> json
+Use `@Transient` to ignore fields.
 
 Open it in IDE and run `Hello.kt`
